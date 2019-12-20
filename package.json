@@ -24,7 +24,10 @@
     "express": "^4.17.1",
     "express-session": "^1.17.0",
     "moment": "^2.24.0",
+    "mongo": "^0.1.0",
+    "mongose": "0.0.2-security",
     "pug": "^2.0.4",
+    "require": "^2.4.20",
     "stylus": "^0.54.7"
   }
 }
