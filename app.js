@@ -30,14 +30,7 @@ if (app.get('env') != 'live'){
 	process.env.DB_URL = 'mongodb://'+process.env.DB_USER+':'+process.env.DB_PASS+'@'+process.env.DB_HOST+':'+process.env.DB_PORT;
 }
 
-app.use(session({
-	secret: '',
-	proxy: true,
-	resave: true,
-	saveUninitialized: true,
-	store: new MongoStore({ url: process.env.DB_URL })
-	})
-);
+
 
 require('./app/server/routes')(app);
 
