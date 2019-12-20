@@ -8,6 +8,7 @@
   },
   "dependencies": {
     "connect-mongo": "^3.2.0",
+    "connect-mongostore": "^0.1.4",
     "cookie-parser": "^1.4.4",
     "email": "^0.2.6",
     "emailjs": "^2.2.0",
