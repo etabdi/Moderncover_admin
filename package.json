@@ -1,10 +1,11 @@
 {
   "name": "moderncover_admin",
   "version": "1.0.0",
-  "description": "",
+  "description": "mongoDB",
   "main": "app.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "website": {
+    "url": "https://modern-cover.herokuapp.com/"
+
   },
   "repository": {
     "type": "git",
@@ -24,7 +25,17 @@
     "express": "^4.17.1",
     "express-session": "^1.17.0",
     "moment": "^2.24.0",
+    "mongo": "^0.1.0",
+    "mongo-connect": "0.0.6",
+    "mongose": "0.0.2-security",
     "pug": "^2.0.4",
+    "require": "^2.4.20",
     "stylus": "^0.54.7"
+  },
+  "engines": {
+    "node": "10.4.0"
+  },
+  "scripts": {
+    "start": "node app.js"
   }
 }
