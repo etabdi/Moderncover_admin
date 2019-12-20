@@ -1,0 +1,29 @@
+extends layout
+
+block content
+  .main.container
+    .row
+      .col-md-4.col-md
+        p.display-4.m-b-1 Add Item
+
+        // register form
+        form(method='POST' action='/register')
+          div.form-group
+            label(for='Item') Item Number:
+            input#item.form-control(type='number', placeholder='Item number' name='number')
+          div.form-group
+            label(for='Item name') Item name:
+            input#item_name.form-control(type='text', placeholder='Item Name' name='Item_name')
+          div.form-group
+            label(for='Describtion') Describtion:
+            input#describtion.form-control(type='text', placeholder='Describtion' name='describtion')
+          div.form-group
+            label(for='Price') price:
+            input#price.form-control(type='number', placeholder='Price($)' name='price')
+          div.form-group
+            label(for='Qty') Qty:
+            input#qty.form-control(type='number' name='Qty')
+          div.form-group
+            label(for='image') upload image:
+            input#image.form-contro(type='file' name='image')
+          button.btn.btn-primary(type='submit') Add Item
