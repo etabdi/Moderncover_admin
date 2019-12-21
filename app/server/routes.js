@@ -166,10 +166,10 @@ module.exports = function(app) {
 	});
 	
 	app.post('/delete', function(req, res){
-		AM.deleteAccount(req.session.user._id, function(e, obj){
+		AM.deleteAccount(req.session.item, function(e, obj){
 			if (!e){
 				res.clearCookie('login');
-				req.session.destroy(function(e){ res.status(200).send('ok'); });
+				req.session.destroy(function(e){	res.redirect('/print'); });
 			}	else{
 				res.status(400).send('record not found');
 			}

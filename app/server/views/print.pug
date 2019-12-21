@@ -15,9 +15,11 @@ block content
 		.navbar-nav.ml-auto
 			.nav-item
 				button.btn.navbar-btn.btn-outline-dark#btn-logout Sign Out
-				
+			
 	div.container(style='margin:5px auto')
+	form(method='POST' action='/home')
 		table.table.table-bordered.table-striped
+	
 			thead.thead-dark
 				tr
 					th(style='width:50px;text-align:center') #
@@ -27,7 +29,7 @@ block content
 					th(style='width:100px') price
 					th(style='width:100px') Qty
 					th(style='width:100px') image						
-					th(style='width:100px') image
+					th(style='width:100px')
 						
 					
 			tbody
@@ -40,7 +42,7 @@ block content
 					td= accts[i].qty
 					td= accts[i].image 
 					td
-						button.btn.btn-danger.delquote(data-id='{{this.id}}') Delete
+						button.btn.btn-danger.delquote(type='button')#account-form-btn1 Delete
 					
 				
 

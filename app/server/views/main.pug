@@ -7,6 +7,7 @@ block content
         p.display-4.m-b-1 Add Item
 
         // register form
+  div.container(style='boarder:5px auto')
       #account-form-container.center-vertical
         form(method='POST' action='/home')
           div.form-group
@@ -20,7 +21,7 @@ block content
             input#describtion.form-control(type='text', placeholder='Describtion' name='describtion')
           div.form-group
             label(for='Price') price:
-            input#price.form-control(type='number', placeholder='Price($)' name='price')
+            input#price.form-control(type='float', placeholder='Price($)' name='price')
           div.form-group
             label(for='qty') Qty:
             input#qty.form-control(type='number' name='qty')

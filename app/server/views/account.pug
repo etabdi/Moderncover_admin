@@ -4,7 +4,15 @@
 // store the userId on the client side in a hidden input field //
 input(type='hidden', value= user._id)#userId
 
+nav.navbar.navbar-expand.navbar-light.bg-light
+		.nav-item
+			.navbar-brand Account Management
+
+				
+
+
 #account-form-container.center-vertical
+div.container(style='margin:5px auto')
 	form.card.card-body.bg-light(method='post')#account-form
 		h2
 		
@@ -37,7 +45,7 @@ input(type='hidden', value= user._id)#userId
 				input.form-control#pass-tf(type='password', name='pass', value='')
 
 		hr
-		.form-buttons
+		.form-buttons(style='margin:5px auto')
 			button(type='button')#account-form-btn1.btn.btn-outline-dark
 			button(type='submit')#account-form-btn2.btn.btn-primary
 
