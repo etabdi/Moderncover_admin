@@ -67,33 +67,28 @@ module.exports = function(app) {
 		}
 	});
 	
-	app.post('/register', function(req, res){
-		if (req.session.user == null){
-			res.redirect('/');
-		}	else{
-			AM.updateAccount({
+	
+		app.post('/home', function(req, res){
+			AM.addNewItem({
 				id		: req.session.user._id,
-				item	: req.body['item'],
 				item_name : req.body['item_name'],
 				describtion	: req.body['describtion'],
 				price	: req.body['price'],
 			    qty	: req.body['qty'],
 				image	: req.body['image']
-			}, function(e, o){
+
+				
+			
+			}, function(e){
 				if (e){
-					res.status(400).send('error-updating-account');
+					res.status(400).send(e);
 				}	else{
-					req.session.user = o.value;
-					// res.status(200).send('ok');
 					res.redirect('/print');
 				}
 			});
-		}
-	});
+		});
+	
 
-/*
-	new accounts
-*/
 
 	app.get('/signup', function(req, res) {
 		res.render('signup', {  title: 'Signup', countries : CT });

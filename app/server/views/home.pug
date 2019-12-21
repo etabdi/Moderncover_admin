@@ -1,14 +1,21 @@
 
 extends layout
-
 block content
-	nav.navbar.navbar-expand.navbar-light.bg-light
-		.nav-item
-			.navbar-brand Control Panel
-		.navbar-nav.ml-auto
-			.nav-item
-				button.btn.navbar-btn.btn-outline-dark#btn-logout Sign Out
-				
+	nav.navbar.navbar-expand-sm.bg-light
+	
+			ul.navbar-nav
+							
+				.navbar-nav.ml-auto
+					.nav-item
+						button.btn.navbar-btn.btn-outline-dark#btn-logout Sign Out
+				.btm-links
+
+					li.nav-item
+				a.nav-link(href='/print') Next
+				li.nav-item
+				a.nav-link(href='/signup') Add user
+	
+
 	//- include account
 	include main
 	include modals/alert

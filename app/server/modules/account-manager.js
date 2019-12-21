@@ -113,7 +113,23 @@ exports.addNewAccount = function(newData, callback)
 		}
 	});
 }
-
+exports.addNewItem = function(newData, callback)
+{
+	accounts.findOne({user:newData.user}, function(e, o) {
+		
+			accounts.findOne({email:newData.email}, function(e, o) {
+					
+					saltAndHash(newData.pass, function(hash){
+						newData.pass = hash;
+					// append date stamp when record was created //
+						newData.date = moment().format('MMMM Do YYYY, h:mm:ss a');
+						accounts.insertOne(newData, callback);
+					});
+				
+			});
+		
+	});
+}
 exports.updateAccount = function(newData, callback)
 {
 	let findOneAndUpdate = function(data){
