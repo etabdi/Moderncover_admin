@@ -31,8 +31,6 @@ if (app.get('env') != 'live'){
 }
 
 app.use(session({
-	secret: 'myCurrentSession',
-
 	resave: true,
 	saveUninitialized: true,
 	store: new MongoStore({ url: process.env.DB_URL })
