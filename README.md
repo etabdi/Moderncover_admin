@@ -1,7 +1,7 @@
 # Modern Cover Admin
 
 
-[ Click here for demo video ](https://drive.google.com/file/d/1G7e0gQQnPDAYErIE3z8uZTD9LH9V53_Z/view)
+[ Click here for demo video ](https://drive.google.com/file/d/12TSMw5dhfOEjggjUC8_PIK_fHdaz7A0U/view)
 
 ### Landing page
     
