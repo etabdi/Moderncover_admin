@@ -34,7 +34,7 @@
       MySQL 
       heroku
       Jawsdb
-      Jad.js Jade Template Engine
+      Jade Template Engine
     
 ## Heroku Link:
 https://moderncoveradmin.herokuapp.com
