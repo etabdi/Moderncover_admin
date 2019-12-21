@@ -5,6 +5,10 @@
 
 ### Landing page
     
+   ![Alt Text](https://github.com/etabdi/Moderncover_admin/blob/master/app/public/img/main.JPG)
+    
+    
+    
    ![Alt Text](https://github.com/etabdi/Moderncover_admin/blob/master/app/public/img/product_manager.JPG)
 
 ### Admin  page
