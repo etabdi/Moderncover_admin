@@ -33,7 +33,7 @@ module.exports = function(app) {
 			if (!o){
 				res.status(400).send(e);
 			}	else{
-				// req.session.user = o;
+				req.session.user = o;
 				if (req.body['remember-me'] == 'false'){
 					res.status(200).send(o);
 				}	else{
@@ -48,7 +48,7 @@ module.exports = function(app) {
 
 	app.post('/logout', function(req, res){
 		res.clearCookie('login');
-		res.redirect('/home');
+		req.session.destroy(function(e){ res.status(200).send('ok'); });
 	})
 	
 /*
@@ -56,19 +56,21 @@ module.exports = function(app) {
 */
 	
 	app.get('/home', function(req, res) {
-			
+		if (req.session.user == null){
+			res.redirect('/');
+		}	else{
 			res.render('home', {
 				title : 'Control Panel',
 				countries : CT,
-				
+				udata : req.session.user
 			});
-		
+		}
 	});
 	
 	
 		app.post('/home', function(req, res){
 			AM.addNewItem({
-			
+				id		: req.session.user._id,
 				item_name : req.body['item_name'],
 				describtion	: req.body['describtion'],
 				price	: req.body['price'],

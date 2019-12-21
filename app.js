@@ -31,7 +31,7 @@ if (app.get('env') != 'live'){
 }
 
 app.use(session({
-	secret: 'faeb4453e5d14fe6f6d04637f78077c76c73d1b4',
+	secret: 'myCurrentSession',
 	proxy: true,
 	resave: true,
 	saveUninitialized: true,
