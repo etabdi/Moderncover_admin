@@ -33,7 +33,8 @@
       cryptr 
       MySQL 
       heroku
-      Jawsdb      
+      Jawsdb
+      Jad.js   
     
 ## Heroku Link:
 https://moderncoveradmin.herokuapp.com
