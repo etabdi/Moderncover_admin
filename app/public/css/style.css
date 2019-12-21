@@ -51,7 +51,7 @@ h6 {
   border: 1px solid #ced4da;
 }
 #login #btn_remember:hover {
-  background: #0777e7;
+  background: #f8f9fa;
 }
 #login h6,
 #login label {
@@ -91,7 +91,6 @@ h6 {
 }
 #account-form-container .col-sm-9 {
   padding-left: 0;
-  background-color: #140d0d;
 }
 #account-form-container .margin-zero {
   margin-bottom: 0;
