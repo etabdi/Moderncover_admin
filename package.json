@@ -6,6 +6,7 @@
   "website": {
     "url": "https://modern-cover.herokuapp.com/"
   },
+  "private": false,
   "dependencies": {
     "connect-mongo": "^3.2.0",
     "connect-mongostore": "^0.1.4",
@@ -14,6 +15,7 @@
     "emailjs": "^2.2.0",
     "express": "^4.17.1",
     "express-session": "^1.17.0",
+    "express-sessions": "^1.0.6",
     "init": "^0.1.2",
     "moment": "^2.24.0",
     "mongodb": "^3.4.1",
@@ -22,7 +24,6 @@
     "pug": "^2.0.4",
     "stylus": "^0.54.7"
   },
-
   "engines": {
     "node": "10.4.0"
   },

@@ -9,15 +9,17 @@ block content
 				.btm-links
 				#forgot-password
 					a(href='/home') Add Item
-			m
-				
+			
+
 
 		.navbar-nav.ml-auto
 			.nav-item
 				button.btn.navbar-btn.btn-outline-dark#btn-logout Sign Out
 			
 	div.container(style='margin:5px auto')
-	form(method='POST' action='/home')
+
+		button.btn.navbar-btn.btn-outline-primary#btn-logout Update Change
+		<hr/>
 		table.table.table-bordered.table-striped
 	
 			thead.thead-dark
@@ -30,20 +32,22 @@ block content
 					th(style='width:100px') Qty
 					th(style='width:100px') image						
 					th(style='width:100px')
-						
-					
-			tbody
+		
+							
+				tbody
 			- for (var i = 0; i < accts.length; i++)
 				tr
 					td(style='text-align:center')= i+1
-					td= accts[i].item_name
-					td= accts[i].describtion
-					td= accts[i].price 
-					td= accts[i].qty
-					td= accts[i].image 
-					td
-						button.btn.btn-danger.delquote(type='button')#account-form-btn1 Delete
+					td(contenteditable='true')= accts[i].item_name
+					td(contenteditable='true')= accts[i].describtion
+					td(contenteditable='true')= accts[i].price 
+					td(contenteditable='true')= accts[i].qty
+					td(contenteditable='true')= accts[i].image 
+					td(contenteditable='true')
 					
+
+
+		
 				
 
 block scripts
