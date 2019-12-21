@@ -1,15 +1,15 @@
 # Modern_admin
 
 
-[ Click here for demo video ](https://drive.google.com/file/d/1BEh4r5-mwdLh5oJpuhWemI75dVKiC3im/view)
+[ Click here for demo video ](https://github.com/etabdi/Moderncover_admin/blob/master/app/public/img/main.JPG)
 
 ### Landing page
     
-   ![Alt Text](https://github.com/etabdi/Modern_admin/blob/master/public/img/cover.JPG)
+   ![Alt Text](https://github.com/etabdi/Moderncover_admin/blob/master/app/public/img/product_manager.JPG)
 
 ### Admin  page
 
-  ![Alt Text](https://github.com/etabdi/Modern_admin/blob/master/public/img/main_page.JPG)
+  ![Alt Text](https://github.com/etabdi/Moderncover_admin/blob/master/app/public/img/add_item.JPG)
    
      
 
