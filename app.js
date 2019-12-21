@@ -21,7 +21,7 @@ app.use(express.static(__dirname + '/app/public'));
 
 process.env.DB_HOST = process.env.DB_HOST || 'localhost'
 process.env.DB_PORT = process.env.DB_PORT || 27017;
-process.env.DB_NAME = process.env.DB_NAME || 'node-login';
+process.env.DB_NAME = process.env.DB_NAME || 'modernCover';
 
 if (app.get('env') != 'live'){
 	process.env.DB_URL = 'mongodb://'+process.env.DB_HOST+':'+process.env.DB_PORT;
@@ -31,7 +31,7 @@ if (app.get('env') != 'live'){
 }
 
 app.use(session({
-	 secret: 'myCurrentSession',
+	secret: 'faeb4453e5d14fe6f6d04637f78077c76c73d1b4',
 	proxy: true,
 	resave: true,
 	saveUninitialized: true,
