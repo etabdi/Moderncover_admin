@@ -1,7 +1,7 @@
 # Modern Cover Admin
 
 
-[ Click here for demo video ](https://github.com/etabdi/Moderncover_admin/blob/master/app/public/img/main.JPG)
+[ Click here for demo video ](https://drive.google.com/file/d/1G7e0gQQnPDAYErIE3z8uZTD9LH9V53_Z/view)
 
 ### Landing page
     
