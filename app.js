@@ -38,7 +38,7 @@ if (app.get('env') != 'live'){
 // 	saveUninitialized: true,
 //     store: new MongoStore({ url: process.env.DB_URL })
 // 	})
-);
+// );
 
 require('./app/server/routes')(app);
 
