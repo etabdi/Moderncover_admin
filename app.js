@@ -1,9 +1,9 @@
 var http = require('http');
 var express = require('express');
-// var session = require('express-session');
+var session = require('express-session');
 var bodyParser = require('body-parser');
 var cookieParser = require('cookie-parser');
-var MongoStore = require('connect-mongo');
+var MongoStore = require('connect-mongo')(session);
 
 var app = express();
 
@@ -30,14 +30,14 @@ if (app.get('env') != 'live'){
 	process.env.DB_URL = 'mongodb://'+process.env.DB_USER+':'+process.env.DB_PASS+'@'+process.env.DB_HOST+':'+process.env.DB_PORT;
 }
 
-// app.use(session({
-// 	secret: 'faeb4453e5d14fe6f6d04637f78077c76c73d1b4',
-// 	proxy: true,
-// 	resave: true,
-// 	saveUninitialized: true,
-// 	store: new MongoStore({ url: process.env.DB_URL })
-// 	})
-// );
+app.use(session({
+	secret: 'faeb4453e5d14fe6f6d04637f78077c76c73d1b4',
+	proxy: true,
+	resave: true,
+	saveUninitialized: true,
+	store: new MongoStore({ url: process.env.DB_URL })
+	})
+);
 
 require('./app/server/routes')(app);
 
