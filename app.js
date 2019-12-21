@@ -31,9 +31,12 @@ if (app.get('env') != 'live'){
 }
 
 app.use(session({
-	resave: true,
+	name: "qid",
+	secret: 'myCurrentSession',
+	proxy: true,
+	resave: false,
 	saveUninitialized: true,
-	store: new MongoStore({ url: process.env.DB_URL })
+
 	})
 );
 
