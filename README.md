@@ -1,15 +1,19 @@
-# Modern_admin
+# Modern Cover Admin
 
 
-[ Click here for demo video ](https://drive.google.com/file/d/1BEh4r5-mwdLh5oJpuhWemI75dVKiC3im/view)
+[ Click here for demo video ](https://drive.google.com/file/d/12TSMw5dhfOEjggjUC8_PIK_fHdaz7A0U/view)
 
 ### Landing page
     
-   ![Alt Text](https://github.com/etabdi/Modern_admin/blob/master/public/img/cover.JPG)
+   ![Alt Text](https://github.com/etabdi/Moderncover_admin/blob/master/app/public/img/main.JPG)
+    
+    
+    
+   ![Alt Text](https://github.com/etabdi/Moderncover_admin/blob/master/app/public/img/product_manager.JPG)
 
 ### Admin  page
 
-  ![Alt Text](https://github.com/etabdi/Modern_admin/blob/master/public/img/main_page.JPG)
+  ![Alt Text](https://github.com/etabdi/Moderncover_admin/blob/master/app/public/img/add_item.JPG)
    
      
 
@@ -29,7 +33,8 @@
       cryptr 
       MySQL 
       heroku
-      Jawsdb      
+      Jawsdb
+      Jade Template Engine
     
 ## Heroku Link:
-https://moderncoveradmin.herokuapp.com/
+https://moderncoveradmin.herokuapp.com
