@@ -36,4 +36,4 @@
       Jawsdb      
     
 ## Heroku Link:
-https://moderncoveradmin.herokuapp.com/
+https://moderncoveradmin.herokuapp.com
