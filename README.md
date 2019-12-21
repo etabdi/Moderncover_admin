@@ -1,4 +1,4 @@
-# Modern_admin
+# Modern Cover Admin
 
 
 [ Click here for demo video ](https://github.com/etabdi/Moderncover_admin/blob/master/app/public/img/main.JPG)
@@ -34,7 +34,7 @@
       MySQL 
       heroku
       Jawsdb
-      Jad.js   
+      Jad.js Jade Template Engine
     
 ## Heroku Link:
 https://moderncoveradmin.herokuapp.com
